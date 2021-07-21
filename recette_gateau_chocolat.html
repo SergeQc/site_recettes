@@ -1,0 +1,176 @@
+<html lang="fr">
+    <head>
+        <style>
+            body { 
+                background-color: #8BA1BB;
+                font-family: Arial;
+            }
+            .centre{
+                text-align: center;
+                width: 100%;
+            }
+            .ombrage {
+                -webkit-box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.28); 
+                box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.28);
+            }
+            .contenu {
+                background-color: #fff;
+                margin: 60 10% 80px 10%;
+                padding: 40px;
+                min-width: 350px;
+            }
+            p.titre {
+                background-color: #000;
+                color: #FFF;
+                font-size: x-large;
+                display:inline-block;
+                padding: 17px 27px 17px 27px;
+                margin: -70px 0 -10px 0;
+            }
+            h1 {
+                text-align: center;
+            }
+            hr {
+                max-width: 100px;
+            }
+            p.description {
+                text-align: center;
+                max-width: 470px;
+                display: inline-block;
+            }
+            img.infos {
+                object-fit: cover;
+                max-height: 600px;
+                /* si l'image est lente à se charger,
+                   le fait de mettre un min-height à 200
+                   et une couleur de fond affichera
+                   une boîte de min 200 de haut 
+                   avec une couleur pâle*/
+                min-height: 200px;
+                background-color: light;
+            }
+            div.infos {
+                position:relative;
+            }
+            table.infos {
+                border: 0;
+                background-color: #6C829DC0;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                color: #FFF;
+                padding: 10px 0 0 0;
+            }
+            table.infos th {
+                padding-bottom: 0;
+            }
+            div.colonne1 {
+                width: 45%;
+                display: inline-block;
+                margin-right: 10%;
+                padding-top: 20px;
+            }
+            div.colonne2 {
+                width: 45%;
+                float: right;
+                padding-top: 20px;
+            }
+            .colonne1 h2, .colonne2 h2 {
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 15px;
+                border-bottom: 5px solid #6C829D;
+                padding-bottom: 7px;
+            }
+            .colonne1 ul {
+                text-align: center;
+                margin: 0;
+                padding: o;
+                list-style-type: none;
+                padding-left: 0;
+            }
+            ul li {
+                padding: 10px 0 10px 0;
+                margin-bottom: 10px;
+                border: 1px solid lightgray;
+            }
+            table p.numero {
+                color: #FFF;
+                background-color: #6C829D;
+                width: 25px;
+                height: 25px;
+                text-align: center;
+                font-size: 14px;
+                font-weight: bold;
+                padding-top: 4px;
+                box-sizing: border-box;
+                border-radius: 50%;
+            }
+            table td {
+                vertical-align: top;
+            }
+            table td.etape {
+                font-size: 14px;
+                padding-left: 10px;
+                padding-bottom: 10px;
+            }
+            table tr {
+                height: 40px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="contenu ombrage">
+            <div class="centre">
+                <p class="titre">Recette</p>
+            </div>
+            <h1>Gâteau au chocolat</h1>
+            <hr>
+            <div class="centre">
+                <p class="description">«Cette recette facile du gateau au chocolat est un grand classique. Elle fera plaisir aux plus gourmands.»</p>
+            </div>
+
+            <img class="centre infos" src="gateau.webp">
+            
+            <div class="infos">
+                <table  class="centre infos">
+                    <tr>
+                        <th>Difficulté</th>
+                        <th>Préparation</th>
+                        <th>Cuisson</th>
+                        <th>Temps total</th>
+                    </tr>
+                    <tr>
+                        <td>Facile</td>
+                        <td>10 min</td>
+                        <td>25 min</td>
+                        <td>35 min</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="colonne1">
+                <h2>Ingrédients</h2>
+        
+                <ul>
+                    <li>Chocolat noir : 200 g</li>
+                    <li>Sucre : 150 g</li>
+                    <li>Beurre : 200 g</li>
+                    <li> Oeufs : 4</li>
+                    <li>Farine : 80 g</li>
+                </ul>
+            </div>
+
+            <div class="colonne2">
+                <h2>Préparation</h2>
+                <table>
+                    <tr><td><p class="numero">1</p></td><td class="etape">Faire fondre le chocolat avec le beurre</td></tr>
+                    <tr><td><p class="numero">2</p></td><td class="etape">Mélanger le sucre, les oeufs et la farine</td></tr>
+                    <tr><td><p class="numero">3</p></td><td class="etape">Mélanger le tout pour faire une päte</td></tr>
+                    <tr><td><p class="numero">4</p></td><td class="etape">Mettre au four</td></tr>
+                    <tr><td><p class="numero">5</p></td><td class="etape">Cuire 40 minutes à 300&degf</td></tr>
+                </table>
+            </div>
+        </div>  
+    </body>
+</html>
